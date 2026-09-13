@@ -1,85 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Gobboo</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+    <title>MORFIK // a self-breeding goblin colony</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="favicon.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  </head>
+  <body>
+  
+  <br>
+  <br>
+  
+  
+    <center><h1>the goblins are back</h1>
 <style>
-  :root{
-    --bg:#000;
-    --fg:#ededed;
-    --dim:#777;
-    --line:#1a1a1a;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{
-    background:var(--bg);
-    color:var(--fg);
-    font-family:"Space Grotesk",system-ui,sans-serif;
-    min-height:100vh;
-    -webkit-font-smoothing:antialiased;
-  }
-  a{color:inherit;text-decoration:none}
-  .mono{font-family:"JetBrains Mono",monospace}
+    body {
+    font-size: 14px;
+    background-color: #000;
+    color: #e6e6e6;
 
-  header{
-    position:fixed;top:0;left:0;right:0;
-    display:flex;align-items:center;justify-content:space-between;
-    padding:26px 34px;
-  }
-  .brand{font-weight:700;font-size:20px;letter-spacing:-.5px}
-  .links{display:flex;gap:26px;font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--dim)}
-  .links a:hover{color:var(--fg)}
+    }
+    a { color: #7ab7ff; }
+    h3 { font-size: 15px; margin: 26px 0 8px; letter-spacing: .3px; }
+    code { color: #8fff6a; }
+    .box {
+      text-align: left;
+      display: inline-block;
+      max-width: 720px;
+      width: 92%;
+      background: #0a0a0a;
+      border: 1px solid #222;
+      border-radius: 4px;
+      padding: 14px 16px;
+      margin: 8px 0 4px;
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+      line-height: 1.55;
+      color: #cfcfcf;
+      white-space: pre;
+      overflow-x: auto;
+    }
+    .box .c { color: #6a6a6a; }   /* comment */
+    .box .k { color: #7ab7ff; }   /* keyword  */
+    .box .s { color: #8fff6a; }   /* string   */
+    .ca {
+      display: inline-block; max-width: 720px; width: 92%;
+      background: #0a0a0a; border: 1px solid #222; border-radius: 4px;
+      padding: 10px 14px; font-family: "Courier New", monospace; font-size: 12px;
+      color: #8fff6a; text-align: left; word-break: break-all;
+    }</style>
+    <p>that last goblin wave. i was on the side writing the code, not the one grabbing a number. you know the one. i won't spell it out.</p>
 
-  main{
-    min-height:100vh;
-    display:flex;flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;
-    padding:120px 24px;
-  }
-  h1{font-size:clamp(56px,12vw,120px);font-weight:700;letter-spacing:-4px;line-height:1}
-  .tagline{
-    margin-top:24px;
-    max-width:520px;
-    color:var(--dim);
-    font-size:clamp(15px,2.2vw,18px);
-    font-weight:400;
-    line-height:1.6;
-  }
-  .cta{
-    margin-top:44px;
-    font-family:"JetBrains Mono",monospace;
-    font-size:13px;
-    color:var(--dim);
-    border:1px solid var(--line);
-    padding:12px 22px;
-    border-radius:6px;
-    letter-spacing:1px;
-  }
-  .cta:hover{color:var(--fg);border-color:#333}
-</style>
-</head>
-<body>
+    <p>MORFIK is a goblin generation system i built. it comes down to one line: every goblin is a pure function of its seed.<br>
+one seed goes in, one genome comes out. palette, eye count, snout, ears, fangs, warts, skull deformation, all of it parameters,<br>then rendered live into procedural svg with zero hand drawing. keep the seed and this exact goblin rebuilds forever. it can't be copied and it can't be forged.</p>
 
-<header>
-  <div class="brand">Gobboo</div>
-  <div class="links">
-    <a href="#" target="_blank" rel="noopener">Twitter</a>
-    <a href="#" target="_blank" rel="noopener">GitHub</a>
-  </div>
-</header>
+    <p>breeding takes two genomes and recombines them, then adds a layer of inbred mutation. the inbreeding is a constraint i added on purpose.<br>the tighter the gene pool, the wilder the drift, the more likely it grows something off script. a third eye. fangs pointing the wrong way. a caved in skull.<br>the system is deterministic, yet i can't predict its output either. ugly isn't a bug. it's the system working.</p>
 
-<main>
-  <h1>Gobboo</h1>
-  <p class="tagline">
-    An inbred colony of goblins. Every pairing scrambles the genes a little more —
-    each offspring is uglier, dumber, and entirely one of a kind.
-  </p>
-  <a class="cta" href="#">Enter the lab →</a>
-</main>
+    <p>i didn't build this to ship another batch of pictures. today's ai images look good, but they're one shot, copyable, dead things with no relation to each other.<br>
+i wanted a living system, one with bloodlines, heredity, drift. the genome doesn't just decide how a goblin looks. it decides how it talks. same genome, same face, same voice.</p>
 
-</body>
+    <p>**v0.1, prototype, refactored at will.</p>
+     <p>****ugly on purpose. malformed goblins and abominations are by design.<BR>
+     ****every goblin is a pure function of its seed.</p>
+
+    <p>last update: 2026-08-16</p>
+    <img src="gobboo-main.jpg" width="260">
+
+    <br><br>
+    <p><a href="https://x.com/MORFIKFORGE" target="_blank" rel="noopener">twitter</a>&nbsp; &nbsp;<a href="https://github.com/casneto/Gobboo" target="_blank" rel="noopener">github</a></p>
+
+    <br><br>
+    <!-- ============ other sections (single page) ============ -->
+
+    <h3>how it breeds</h3>
+    <p>every goblin is a genome: a flat, versioned vector of traits, and nothing outside that vector defines the goblin.<br>
+    breeding two of them is one function, <code>recombine(mother, father, seed)</code>, and it runs the same five steps every time.</p>
+    <div class="box"><span class="c"># the breeding pipeline, top to bottom</span>
+
+<span class="s">1. derive</span>    child_seed = hash(mother.seed, father.seed, seed)
+             <span class="c"># one number that fully determines the child</span>
+
+<span class="s">2. inherit</span>   for each locus:  coin(child_seed) ? mother[locus] : father[locus]
+             <span class="c"># discrete traits (eyes, fangs) are picked whole</span>
+
+<span class="s">3. blend</span>     continuous traits (snout, skull...) are averaged, then
+             nudged by a small prng jitter off the midpoint
+
+<span class="s">4. mutate</span>    roll once per locus. odds scale with kinship (see below).
+             a hit pushes the trait off the map: a third eye,
+             a reversed fang, a skull that caves in
+
+<span class="s">5. clamp</span>     force every value back into its legal range, so even
+             a monster is still a valid, renderable goblin</div>
+    <p>every random draw in steps 1 to 4 comes from a prng seeded only by the two parents and the seed. there is no wall clock,<br>
+    no global state, no network. the whole function is pure. same parents, same seed, byte for byte the same child, on any<br>
+    machine, in any year. that is the one rule the entire project is built on, and everything below is a consequence of it.</p>
+
+    <br>
+    <h3>the genome</h3>
+    <p>a goblin serialized. this is the whole thing. the renderer reads it to draw the face; the ai reads it to write the voice.<br>
+    the format is versioned, so an old seed always rebuilds under the rules it was born in, even after the spec moves on.</p>
+    <div class="box"><span class="c"># goblin.json  (schema v1)</span>
+{
+  <span class="s">"v"</span>:         <span class="s">1</span>,               <span class="c"># genome schema version</span>
+  <span class="s">"seed"</span>:      <span class="s">741190</span>,          <span class="c"># the goblin IS this number</span>
+  <span class="s">"parents"</span>:   [<span class="s">118050</span>, <span class="s">339201</span>],  <span class="c"># mother seed, father seed</span>
+  <span class="s">"palette"</span>:   <span class="s">4</span>,               <span class="c"># skin / hue index      0..8</span>
+  <span class="s">"eyes"</span>:      <span class="s">3</span>,               <span class="c"># eye count             1..3  (inbred spike)</span>
+  <span class="s">"eye_size"</span>:  <span class="s">1.24</span>,            <span class="c">#                       0.6..1.8</span>
+  <span class="s">"eye_spread"</span>:<span class="s">0.71</span>,            <span class="c"># how far apart          0.5..1.5</span>
+  <span class="s">"snout"</span>:     <span class="s">0.81</span>,            <span class="c"># nose length           0.4..1.6</span>
+  <span class="s">"ears"</span>:      { <span class="s">"size"</span>: <span class="s">1.1</span>, <span class="s">"droop"</span>: <span class="s">0.7</span> },
+  <span class="s">"fangs"</span>:     <span class="s">2</span>,               <span class="c"># protruding teeth      0..3</span>
+  <span class="s">"warts"</span>:     <span class="s">4</span>,               <span class="c"># wart count            0..6</span>
+  <span class="s">"brow"</span>:      -<span class="s">11</span>,             <span class="c"># brow angle, degrees   -30..30</span>
+  <span class="s">"skull"</span>:     <span class="s">1.22</span>,            <span class="c"># deformation   &gt;1 bulges, &lt;1 caves in</span>
+  <span class="s">"mutations"</span>: [<span class="s">"third_eye"</span>, <span class="s">"reversed_fang"</span>]
+}</div>
+
+    <br>
+    <h3>call the ai</h3>
+    <p>this is how you play. there is no mint button and no hosted app. you clone the repo, bring your own key, and call the<br>
+    model yourself. the genome math is pure and local; it gives you the face for free. the ai is what gives the goblin a soul.<br>
+    it reads the genome and speaks as that exact goblin, names itself, and talks in a voice no other goblin has, because the<br>
+    same numbers that bent its skull also bend how it thinks. no ai call, no soul. just a face waiting for one.</p>
+    <div class="box"><span class="c"># pip install anthropic  &&  export ANTHROPIC_API_KEY=sk-ant-...</span>
+<span class="k">import</span> anthropic
+<span class="k">from</span> gobboo <span class="k">import</span> Genome, recombine   <span class="c"># deterministic, local, no ai</span>
+
+client = anthropic.Anthropic()
+
+<span class="k">def</span> breed(mother, father, seed):
+    child = recombine(mother, father, seed)   <span class="c"># pure function of the seed</span>
+
+    soul = client.messages.create(
+        model=<span class="s">"claude-opus-4-8"</span>,
+        max_tokens=<span class="s">400</span>,
+        thinking={<span class="s">"type"</span>: <span class="s">"adaptive"</span>},
+        system=(
+            <span class="s">"you ARE the goblin this genome describes. "</span>
+            <span class="s">"more eyes, more paranoia. caved skull, slower wits. "</span>
+            <span class="s">"more warts, meaner. speak only in its voice. "</span>
+            <span class="s">"name yourself. stay ugly."</span>
+        ),
+        messages=[{<span class="s">"role"</span>: <span class="s">"user"</span>, <span class="s">"content"</span>: child.to_json()}],
+    )
+    <span class="k">return</span> child, soul.content[<span class="s">0</span>].text
+
+<span class="c"># same seed in, same goblin out. forever.</span>
+goblin, voice = breed(Genome.load(<span class="s">"mother.json"</span>),
+                      Genome.load(<span class="s">"father.json"</span>), seed=<span class="s">741190</span>)
+<span class="k">print</span>(voice)
+<span class="c"># mekmek. i am Snotgrub. three eyes see three enemies. you are all three.</span></div>
+
+    <br>
+    <h3>bring your own model</h3>
+    <p>the genome is the contract, not the model. MORFIK ships tuned against <code>claude-opus-4-8</code>, but the ai side is just:<br>
+    genome in, voice out. point <code>breed()</code> at whatever chat model you can call and the goblins still speak. swap the client,<br>
+    keep the system prompt. run it against a local model with no key at all if you want. the face is always yours because the<br>
+    math is local; the voice is yours because you brought the model. nobody is renting you your own goblin.</p>
+
+    <br>
+    <h3>run it yourself</h3>
+    <p>the entire thing is a repo and a key. no account, no frontend, no permission.</p>
+    <div class="box"><span class="c"># three lines to your first goblin</span>
+git clone https://github.com/casneto/Gobboo
+cd Gobboo && pip install -e .
+gobboo breed mother.json father.json --seed 741190 --render out.svg
+
+<span class="c"># or from scratch, no parents:</span>
+gobboo spawn --seed 741190 --render out.svg --voice</div>
+
+    <br>
+    <h3>the renderer</h3>
+    <p>the genome does not point at a picture. there is no image file anywhere, no sprite sheet, no stored art. the renderer is<br>
+    pure geometry: it reads the numbers and issues draw calls, one trait at a time, building the goblin as layered svg. eye<br>
+    count decides how many eye groups get placed, skull scales the head ellipse, wart count seeds that many bumps from the<br>
+    same prng, mutations splice in extra passes. because it is math and not assets, the same genome draws the exact same face<br>
+    in a browser, on a server, in a terminal preview. the goblin is not stored anywhere. it is recomputed, identically, on<br>
+    demand, from the number.</p>
+
+    <br>
+    <h3>inbreeding</h3>
+    <p>the colony only ever breeds within itself, so bloodlines fold back on each other fast. the engine measures that with a<br>
+    kinship coefficient: walk both parents' ancestry, count shared ancestors, weight by distance. the closer the pair, the<br>
+    higher the number, and the mutation odds in step 4 scale straight off it. distant strangers breed clean and boring.<br>
+    siblings breed monsters. this is the whole aesthetic engine: a closed gene pool that drifts harder the longer it runs.</p>
+    <div class="box"><span class="c"># mutation odds per locus, by how related the parents are</span>
+
+  unrelated        kinship 0.00      ~4%    <span class="c">// clean, forgettable</span>
+  cousins          kinship 0.06      ~11%
+  half siblings    kinship 0.12      ~19%
+  siblings         kinship 0.25      ~34%
+  self x self      kinship 0.50      ~55%   <span class="c">// abominations</span></div>
+
+    <br>
+    <h3>mutations &amp; rarity</h3>
+    <p>a mutation is a trait shoved past its normal range, or an extra draw call the base genome never had. they are catalogued,<br>
+    not open ended, so a mutation means the same thing on every goblin that carries it. rarity is not assigned by hand. every<br>
+    goblin gets an ugliness score, summed from how far each trait sits from baseline plus its mutation load, and the score<br>
+    alone decides the tier. ugly is not a defect here. ugly is the rarity.</p>
+    <div class="box"><span class="c"># rarity is derived, never granted</span>
+
+  common        ugliness  0..33     the vast, forgettable middle
+  weird         ugliness 34..57     one thing is clearly wrong
+  cursed        ugliness 58..79     several things are wrong at once
+  abomination   ugliness 80..100    should not have been born</div>
+
+    <br>
+    <h3>the colony</h3>
+    <p>the colony is every goblin anyone has ever bred. because a goblin is nothing but a seed plus its two parents, the entire<br>
+    population compresses to a list of lineages that anyone can replay and rebuild bit for bit. no server holds the art, no<br>
+    database holds the truth. the seed is the goblin. hold the seed and you hold the goblin, and no one can take it, dilute it,<br>
+    or fake it. two people on opposite ends of the earth, given the same lineage, rebuild the identical creature down to the<br>
+    last wart. the population is not a collection of files. it is a shared, replayable history that lives in the numbers.</p>
+
+    <br>
+    <h3>roadmap</h3>
+    <p><code>v0.1</code> &nbsp; genome spec, deterministic breeding, svg renderer, ai voice, running locally. &nbsp;<span class="c">// you are here</span><br>
+    <code>next</code> &nbsp; publish the repo. freeze the genome format and the prng so everyone breeds against the same standard.<br>
+    <code>then</code> &nbsp; a shared colony index: post a lineage, anyone rebuilds the exact goblin and its voice from the seed alone.<br>
+    <code>after</code> &nbsp; a family tree you can walk: every goblin back to the founders, kinship visible, bloodlines you can hunt.<br>
+    <code>later</code> &nbsp; persistent voices. a goblin remembers what it said the last time you called it, and holds a grudge.</p>
+
+    <br>
+    <h3>faq</h3>
+    <p><code>how do i play.</code> &nbsp; clone the repo, add your key, run <code>breed()</code>. no signup, no mint, no waitlist, no site to log into.<br>
+    <code>why do i need my own ai.</code> &nbsp; the goblin is generative, not a jpeg. its voice is computed on demand from its genome, by you, not served to you.<br>
+    <code>which model.</code> &nbsp; tuned on <code>claude-opus-4-8</code>, but any chat model works. the genome is the contract; the model is swappable.<br>
+    <code>is there a token.</code> &nbsp; not live. maybe never. the ca above stays empty until it isn't, and it may never.<br>
+    <code>can two people breed the same goblin.</code> &nbsp; yes. same parents, same seed, byte identical goblin and voice, every time, every machine.<br>
+    <code>why is it so ugly.</code> &nbsp; inbreeding. the gene pool is closed on purpose. ugly is the feature, not the bug.<br>
+    <code>can i sell one.</code> &nbsp; you can sell a seed. whether that means anything is between you and whoever wants it.<br>
+    <code>who made this.</code> &nbsp; the one who was writing the code last time.</p>
+
+    <br>
+    <h3>principles</h3>
+    <p>a goblin is a pure function of its seed.<br>
+    the face is math, the soul is a model call, and both are yours.<br>
+    nothing is stored that cannot be recomputed.<br>
+    the gene pool stays closed. drift is the point.<br>
+    ugly is not a defect. ugly is the rarity.<br>
+    no button. you run it yourself.</p>
+
+    <br><br><br>
+    <p>© 2026 MORFIK. all goblins are pure functions of their seed.</p>
+
+  
+    
+  <link rel="stylesheet" href="gobboo-system.css">
+  <script src="gobboo-system.js"></script>
+  </body>
 </html>
