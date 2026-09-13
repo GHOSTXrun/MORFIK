@@ -1,1 +1,86 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gobboo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#000;
+    --fg:#ededed;
+    --dim:#777;
+    --line:#1a1a1a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg);
+    color:var(--fg);
+    font-family:"Space Grotesk",system-ui,sans-serif;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  .mono{font-family:"JetBrains Mono",monospace}
+
+  header{
+    position:fixed;top:0;left:0;right:0;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:26px 34px;
+  }
+  .brand{font-weight:700;font-size:20px;letter-spacing:-.5px}
+  .links{display:flex;gap:26px;font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--dim)}
+  .links a:hover{color:var(--fg)}
+
+  main{
+    min-height:100vh;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;
+    padding:120px 24px;
+  }
+  h1{font-size:clamp(56px,12vw,120px);font-weight:700;letter-spacing:-4px;line-height:1}
+  .tagline{
+    margin-top:24px;
+    max-width:520px;
+    color:var(--dim);
+    font-size:clamp(15px,2.2vw,18px);
+    font-weight:400;
+    line-height:1.6;
+  }
+  .cta{
+    margin-top:44px;
+    font-family:"JetBrains Mono",monospace;
+    font-size:13px;
+    color:var(--dim);
+    border:1px solid var(--line);
+    padding:12px 22px;
+    border-radius:6px;
+    letter-spacing:1px;
+  }
+  .cta:hover{color:var(--fg);border-color:#333}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Gobboo</div>
+  <div class="links">
+    <a href="#" target="_blank" rel="noopener">Twitter</a>
+    <a href="#" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</header>
+
+<main>
+  <h1>Gobboo</h1>
+  <p class="tagline">
+    An inbred colony of goblins. Every pairing scrambles the genes a little more —
+    each offspring is uglier, dumber, and entirely one of a kind.
+  </p>
+  <a class="cta" href="#">Enter the lab →</a>
+</main>
+
+</body>
+</html>
